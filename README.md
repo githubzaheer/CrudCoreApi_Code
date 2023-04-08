@@ -134,9 +134,7 @@ and add in programe.css
   ![image](https://user-images.githubusercontent.com/129961356/230735408-b7d035ed-bce1-4028-8bd3-21acc3603e07.png)
 23. lets copy the token and paste it in Authorization Type.
   ![image](https://user-images.githubusercontent.com/129961356/230735457-589b2f80-6204-4f63-98ae-dd1c382041af.png)
-Api will called successfully.
-  
-  
+Api will called successfully.  
 24. Lets Implement the Gitrepo creation.. 
   got to github account then go to repositories then create new then fill the required info also select to add redme file and mark as public privacy.
 25. Install Git bash.
@@ -153,9 +151,7 @@ Api will called successfully.
   buildspec.yml
   ![image](https://user-images.githubusercontent.com/129961356/230736468-62d328b5-731b-489e-a442-ff3cf7d3b61e.png)
   and Procfile.
-  ![image](https://user-images.githubusercontent.com/129961356/230736490-f18f3664-e2df-4c28-8c27-662f696b2884.png)
-
-  
+  ![image](https://user-images.githubusercontent.com/129961356/230736490-f18f3664-e2df-4c28-8c27-662f696b2884.png)  
 29. Lets Create the AWS account if not exist
   Log into your AWS account and navigate to AWS Elastic Beanstalk. Here, click on Create Application. Here, just give a nice name for your web application.
   ![image](https://user-images.githubusercontent.com/129961356/230735877-5dd08cfe-3532-45d6-9d8b-5b0900658533.png)
@@ -174,7 +170,6 @@ Api will called successfully.
 35. You will get a prompt from GitHub to allow access. For now, I have given access to all repositories. You can choose specific repositories as well.
   ![image](https://user-images.githubusercontent.com/129961356/230736224-d67316fe-e808-48bd-b35c-af87da5aefa7.png)
 36. Once connected, you will get to see a list of repositories under your GitHub account. Select our newly created repository which holds the .NET 6 Web API code. Select the default branch, which is the master.
-
 More importantly, ensure that you have selected the ‘Start the pipeline on source code change’. This makes sure that whenever there is a code change pushed to the master branch of your repository, the pipeline will be re-triggered! Click Next.
 37. Next, is where we define the build stage of the pipeline. Here, select the provider as AWS CodeBuild. Create a new AWS CodeBuild project by clicking Create Project.
 38. There will be a new popup for creating a new build project. Give it a name.
@@ -196,6 +191,9 @@ Note:
   All Apis are working correctly on local machine but on aws have some issue to connect with database, database is created and connected on my local machine and also i m using it to create now databse and adding the data using api's. but facing some connection issue with aws. ![image](https://user-images.githubusercontent.com/129961356/230736990-00909194-d9e7-4810-b2c2-6b74bc3faefa.png)
 Rest of the api those are not using databse are working fine. 
   ![image](https://user-images.githubusercontent.com/129961356/230737052-5e7894c3-e90c-4a04-b552-d29f97aaef22.png)
+    
 Also authorization is also working fine.
+
+some to the config values are in direct in code due some issues to get value from config after deployment.
   
   
