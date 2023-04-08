@@ -37,7 +37,7 @@ namespace CRUD_CoreApi.Controllers
 
         private string Generate(User user)
         {
-            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
+            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("DhftOS5uphK3vmCJQrexST1RsyjZBjXWRgJMFPU4")); //_config["Jwt:Key"]
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
 
             var claims = new[]
@@ -49,8 +49,14 @@ namespace CRUD_CoreApi.Controllers
                 new Claim(ClaimTypes.Role, user.Role)
             };
 
-            var token = new JwtSecurityToken(_config["Jwt:Issuer"],
-              _config["Jwt:Audience"],
+            //var token = new JwtSecurityToken(_config["Jwt:Issuer"],
+            //  _config["Jwt:Audience"],
+            //  claims,
+            //  expires: DateTime.Now.AddMinutes(15),
+            //  signingCredentials: credentials);
+
+            var token = new JwtSecurityToken("http://localhost:34355",
+              "http://localhost:34355",
               claims,
               expires: DateTime.Now.AddMinutes(15),
               signingCredentials: credentials);

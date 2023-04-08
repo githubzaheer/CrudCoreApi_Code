@@ -5,7 +5,7 @@
 namespace CRUD_CoreApi.Migrations
 {
     /// <inheritdoc />
-    public partial class Initial : Migration
+    public partial class awsdb : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

@@ -12,8 +12,8 @@ using Porduct_Management.Data;
 namespace CRUD_CoreApi.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230407100256_Initial")]
-    partial class Initial
+    [Migration("20230408160554_awsdb")]
+    partial class awsdb
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
