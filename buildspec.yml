@@ -1,0 +1,18 @@
+version: 0.2
+        
+phases:
+  install:
+    runtime-versions:
+      dotnet: 6.0
+  pre_build:
+    commands:
+      - dotnet restore CRUD_CoreApi/CRUD_CoreApi.csproj
+  build:
+    commands:
+      - dotnet build CRUD_CoreApi/CRUD_CoreApi.csproj
+  post_build:
+    commands:
+      - dotnet publish -c Release -o ./app/ CRUD_CoreApi/CRUD_CoreApi.csproj
+artifacts:
+  files:
+    - '**/*'
